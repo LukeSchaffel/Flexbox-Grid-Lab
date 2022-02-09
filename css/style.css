@@ -27,14 +27,29 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  border: solid grey;
+
+}
+
+main {
+  background-color: rgb(236, 235, 229);
+  border: solid black 1px;
+  width: 200px;
+  padding: 0;
+  display: flexbox;
+  
 }
 
 img {
   width: 60%;
   border-radius: 50%;
   border: solid rgb(18, 145, 37) ;
+  margin-left: 30px;
+}
+
+#name {
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 #status {
@@ -47,9 +62,9 @@ img {
 }
 
 #contact {
-  display: grid;
+  display: flex;
   grid-template-columns: 50% 50%;
-  background-color: green;
+  
   
   
 }
@@ -60,6 +75,38 @@ img {
   background-color: rgba(128, 128, 128, 0.345);
 }
 
-p {
-  display: block;
+
+#offer {
+  text-align: center;
+}
+
+
+#contact > p {
+  width: 50%;
+background-color: light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact:last-child {
+  background-color: green;
+}
+
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: white;
+  }
+  #main {
+    display: in;
+  }
+
+  img {
+    
+  }
+
+#brand {
+  display: flex;
+}
 }
