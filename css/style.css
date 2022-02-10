@@ -24,26 +24,27 @@ body {
     Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   margin: 0;
   display: flex;
-  flex-direction: column;
+
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 
 }
 
 main {
   background-color: rgb(236, 235, 229);
   border: solid black 1px;
-  width: 200px;
-  padding: 0;
-  display: flexbox;
+  width: 300px;
+  font-size: 2rem;
+  
   
 }
 
 img {
-  width: 60%;
+  
   border-radius: 50%;
   border: solid rgb(18, 145, 37) ;
-  margin-left: 30px;
+  
 }
 
 #name {
@@ -55,6 +56,7 @@ img {
 #status {
   text-align: right;
   color: rgb(160, 180, 198);
+  font-size: 1.2rem;
 }
 
 #brand {
@@ -99,14 +101,51 @@ background-color: light;
     background-color: white;
   }
   #main {
-    display: in;
+    display: grid;
+    text-align: left;
+    width: 550px;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: 
+    "picture name"
+    "picture occupation"
+    "picture brand"
+    "contact offer" ;
   }
-
   img {
-    
+    grid-area: picture;
+    margin: 0 auto;
   }
 
-#brand {
-  display: flex;
+  #name {
+    grid-area: name;
+    margin: 0 auto;
+  }
+
+  #brand {
+    grid-area: brand;
+    display: inline;
+  }
+
+  #contact {
+    grid-area: contact;
+  }
+
+ #occupation {
+   grid-area: occupation;
+ }
+
+
+
+#offer {
+  grid-area: offer;
+
 }
+
+#name, #occupation, #brand, #offer {
+  padding-left: 20px;
+  background-color: lightgray;
+}
+
+
 }
