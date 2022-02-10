@@ -47,11 +47,7 @@ img {
   
 }
 
-#name {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-}
+
 
 #status {
   text-align: right;
@@ -117,6 +113,11 @@ background-color: light;
     margin: 0 auto;
   }
 
+  #status {
+    text-align: left;
+    padding: 10px 0 0 20px;
+  }
+
   #name {
     grid-area: name;
     margin: 0 auto;
@@ -142,10 +143,6 @@ background-color: light;
 
 }
 
-#name, #occupation, #brand, #offer {
-  padding-left: 20px;
-  background-color: lightgray;
-}
 
 
 }
